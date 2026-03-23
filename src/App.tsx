@@ -1,14 +1,15 @@
 import { useState, useMemo } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from './components/Header';
-import Filters from './components/Filters';
-import Stats from './components/Stats';
-import MatchList from './components/MatchList';
-import Footer from './components/Footer';
-import Estadios from './pages/Estadios';
-import Grupos from './pages/Grupos';
-import Selecoes from './pages/Selecoes';
-import { stadiums, matches, type Match } from './types/data';
+import Header from "./components/Header";
+import Filters from "./components/Filters";
+import Stats from "./components/Stats";
+import MatchList from "./components/MatchList";
+import Footer from "./components/Footer";
+import FullCalendar from "./pages/FullCalendar";
+import Estadios from "./pages/Estadios";
+import Grupos from "./pages/Grupos";
+import Selecoes from "./pages/Selecoes";
+import { matches, stadiums, type Match } from "./types/data";
 
 // ── App ───────────────────────────────────────────────────────────────────────
 
@@ -85,6 +86,7 @@ export default function App() {
           <Route path="/estadios" element={<Estadios />} />
           <Route path="/grupos" element={<Grupos />} />
           <Route path="/selecoes" element={<Selecoes />} />
+          <Route path="/calendario" element={<FullCalendar />} />
         </Routes>
 
         {/* ── Footer ── */}
