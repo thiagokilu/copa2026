@@ -8,10 +8,11 @@ const Grupos = () => {
   const [selectedGroup, setSelectedGroup] = useState("A");
 
   const groupTeams = useMemo(() => {
-    return groups[selectedGroup]?.teams || [];
+    const groupsData = groups as Record<string, { color: string; teams: string[] }>;
+    return groupsData[selectedGroup]?.teams || [];
   }, [selectedGroup]);
 
-  const groupColor = groups[selectedGroup]?.color || "#888";
+  const groupColor = groupsData[selectedGroup]?.color || "#888";
 
   // Lógica de cálculo (mantive sua lógica que já está correta, mas com nomes mais limpos)
   const getTeamStats = (teamName: string) => {
@@ -112,7 +113,7 @@ const Grupos = () => {
                             {index + 1}
                           </span>
                           <div className="relative">
-                            <Flag name={teamName} className="w-8 h-auto rounded shadow-lg" />
+                            <Flag name={teamName} />
                             {isQualified && (
                               <div className="absolute -top-1 -right-1 w-2 h-2 bg-green-500 rounded-full border-2 border-slate-900 shadow-sm" title="Zona de classificação" />
                             )}

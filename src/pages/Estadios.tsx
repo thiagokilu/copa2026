@@ -71,7 +71,7 @@ const Estadios = () => {
                     alt={name}
                     className="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#020617]/80 to-transparent md:from-transparent" />
+                  <div className="absolute inset-0 bg-linear-to-r from-[#020617]/80 to-transparent md:from-transparent" />
                   
                   {/* Badge de Jogos sobre a imagem */}
                   <div className="absolute top-4 left-4 bg-yellow-500 text-black px-3 py-1 rounded-full text-[10px] font-black uppercase flex items-center gap-1 shadow-lg">
