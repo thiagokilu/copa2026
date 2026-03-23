@@ -1,0 +1,165 @@
+{
+  "competition": {
+    "name": "FIFA World Cup 2026",
+    "edition": "23rd",
+    "hosts": ["United States", "Mexico", "Canada"],
+    "start": "2026-06-11",
+    "end": "2026-07-19",
+    "teams": 48,
+    "matches": 104,
+    "groups": 12,
+    "final_venue": "MetLife Stadium",
+    "final_city": "East Rutherford, NJ — EUA"
+  },
+
+  "groups": {
+    "A": {
+      "color": "#E63946",
+      "teams": [
+        "México",
+        "África do Sul",
+        "Coreia do Sul",
+        "Dinamarca / Macedônia do Norte / Tchéquia / República da Irlanda"
+      ]
+    },
+    "B": {
+      "color": "#457B9D",
+      "teams": [
+        "Canadá",
+        "Catar",
+        "Suíça",
+        "Itália / Irlanda do Norte / País de Gales / Bósnia e Herzegovina"
+      ]
+    },
+    "C": {
+      "color": "#2D6A4F",
+      "teams": ["Brasil", "Marrocos", "Haiti", "Escócia"]
+    },
+    "D": {
+      "color": "#E9C46A",
+      "teams": [
+        "EUA",
+        "Paraguai",
+        "Austrália",
+        "Turquia / Romênia / Eslováquia / Kosovo"
+      ]
+    },
+    "E": {
+      "color": "#F4A261",
+      "teams": ["Alemanha", "Curaçao", "Costa do Marfim", "Equador"]
+    },
+    "F": {
+      "color": "#9B5DE5",
+      "teams": [
+        "Holanda",
+        "Japão",
+        "Ucrânia / Suécia / Polônia / Albânia",
+        "Tunísia"
+      ]
+    },
+    "G": {
+      "color": "#00B4D8",
+      "teams": ["Bélgica", "Egito", "Irã", "Nova Zelândia"]
+    },
+    "H": {
+      "color": "#E76F51",
+      "teams": ["Espanha", "Cabo Verde", "Arábia Saudita", "Uruguai"]
+    },
+    "I": {
+      "color": "#06D6A0",
+      "teams": [
+        "França",
+        "Senegal",
+        "Noruega",
+        "Iraque / Bolívia / Suriname"
+      ]
+    },
+    "J": {
+      "color": "#FF6B6B",
+      "teams": ["Argentina", "Argélia", "Áustria", "Jordânia"]
+    },
+    "K": {
+      "color": "#4CC9F0",
+      "teams": [
+        "Portugal",
+        "Colômbia",
+        "Uzbequistão",
+        "Rep. Dem. do Congo / Nova Caledônia / Jamaica"
+      ]
+    },
+    "L": {
+      "color": "#F72585",
+      "teams": ["Inglaterra", "Croácia", "Gana", "Panamá"]
+    }
+  },
+
+  "playoffs": {
+    "UEFA_A": [
+      "Itália",
+      "Irlanda do Norte",
+      "País de Gales",
+      "Bósnia e Herzegovina"
+    ],
+    "UEFA_B": ["Ucrânia", "Suécia", "Polônia", "Albânia"],
+    "UEFA_C": ["Turquia", "Romênia", "Eslováquia", "Kosovo"],
+    "UEFA_D": [
+      "Dinamarca",
+      "Macedônia do Norte",
+      "Tchéquia",
+      "República da Irlanda"
+    ],
+    "INTER_1": [
+      "República Democrática do Congo",
+      "Nova Caledônia",
+      "Jamaica"
+    ],
+    "INTER_2": ["Iraque", "Bolívia", "Suriname"]
+  },
+
+  "matches": [
+    {
+      "id": 1,
+      "date": "2026-06-11",
+      "time_brt": "16:00",
+      "group": "A",
+      "home": "México",
+      "away": "África do Sul",
+      "stadium": "Estádio Azteca",
+      "score": null,
+      "status": "SCHEDULED"
+    },
+    {
+      "id": 2,
+      "date": "2026-06-11",
+      "time_brt": "23:00",
+      "group": "A",
+      "home": "Coreia do Sul",
+      "away": "Dinamarca / Macedônia do Norte / Tchéquia / República da Irlanda",
+      "stadium": "Estadio Akron",
+      "score": null,
+      "status": "SCHEDULED"
+    },
+    {
+      "id": 3,
+      "date": "2026-06-12",
+      "time_brt": "16:00",
+      "group": "B",
+      "home": "Canadá",
+      "away": "Itália / Irlanda do Norte / País de Gales / Bósnia e Herzegovina",
+      "stadium": "BMO Field",
+      "score": null,
+      "status": "SCHEDULED"
+    },
+    {
+      "id": 4,
+      "date": "2026-06-12",
+      "time_brt": "22:00",
+      "group": "D",
+      "home": "EUA",
+      "away": "Paraguai",
+      "stadium": "SoFi Stadium",
+      "score": null,
+      "status": "SCHEDULED"
+    }
+  ]
+}
