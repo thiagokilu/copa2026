@@ -1,6 +1,7 @@
 import { useState, useMemo } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
+import BottomNav from "./components/BottomNav";
 import Filters from "./components/Filters";
 import Stats from "./components/Stats";
 import MatchList from "./components/MatchList";
@@ -57,7 +58,7 @@ export default function App() {
 
   return (
     <Router>
-      <div className="min-h-screen bg-[#0a0e1a] text-white font-sans">
+      <div className="min-h-screen bg-[#0a0e1a] text-white font-sans md:pb-0 pb-[72px]">
         {/* ── Header ── */}
         <Header totalStadiums={Object.keys(stadiums).length} />
 
@@ -92,6 +93,9 @@ export default function App() {
         {/* ── Footer ── */}
         <Footer />
       </div>
+      
+      {/* Bottom Navigation Mobile */}
+      <BottomNav />
     </Router>
   );
 }

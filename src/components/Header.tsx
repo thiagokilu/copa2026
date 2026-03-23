@@ -28,15 +28,13 @@ const Header = ({ totalStadiums }: HeaderProps) => {
           
           {/* Badge de Temporada */}
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-yellow-500/10 border border-yellow-500/20 mb-4 transition-transform hover:scale-105">
-            <PiTrophyFill className="text-yellow-500 text-xs" />
-            <span className="text-[10px] font-black text-yellow-500 uppercase tracking-[0.2em]">
-              World Cup Season
-            </span>
+            <PiTrophyFill className="text-yellow-500 text-sm" />
+            <span className="text-yellow-500 text-xs font-bold uppercase tracking-wider">Copa do Mundo 2026</span>
           </div>
 
-          {/* Título com Tipografia de Impacto */}
-          <h1 className="text-4xl sm:text-6xl font-[1000] tracking-tighter text-white mb-2 italic">
-            COPA<span className="text-yellow-500">2026</span>
+          {/* Título Principal */}
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-center bg-gradient-to-r from-white via-yellow-100 to-white bg-clip-text text-transparent mb-2 transition-all duration-700">
+            FIFA World Cup
           </h1>
 
           {/* Subtítulo Dinâmico */}
@@ -48,8 +46,8 @@ const Header = ({ totalStadiums }: HeaderProps) => {
             <span className="text-slate-400 italic">Junho - Julho</span>
           </div>
 
-          {/* Navegação Estilo 'Pills' Profissional */}
-          <nav className="flex justify-center gap-2 mt-8 p-1.5 bg-white/5 backdrop-blur-md border border-white/5 rounded-2xl overflow-x-auto max-w-full no-scrollbar">
+          {/* Navegação Desktop - Escondido em mobile */}
+          <nav className="hidden md:flex justify-center gap-2 mt-8 p-1.5 bg-white/5 backdrop-blur-md border border-white/5 rounded-2xl overflow-x-auto max-w-full no-scrollbar">
             {navItems.map(({ path, label, icon }) => {
               const isActive = location.pathname === path;
               return (
