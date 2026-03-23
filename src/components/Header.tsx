@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { competition } from '../types/data';
 // Usando Phosphor Icons para um traço consistente e moderno
-import { PiSoccerBallFill, PiTrophyFill, PiMapPinFill, PiChartPieSliceFill, PiUsersThreeFill } from 'react-icons/pi';
+import { PiSoccerBallFill, PiTrophyFill, PiMapPinFill, PiChartPieSliceFill, PiUsersThreeFill, PiCalendarFill } from 'react-icons/pi';
 
 interface HeaderProps {
   totalStadiums: number;
@@ -15,6 +15,7 @@ const Header = ({ totalStadiums }: HeaderProps) => {
     { path: "/estadios", label: "Estádios", icon: <PiMapPinFill /> },
     { path: "/grupos", label: "Grupos", icon: <PiChartPieSliceFill /> },
     { path: "/selecoes", label: "Seleções", icon: <PiUsersThreeFill /> },
+    { path: "/calendario", label: "Calendário", icon: <PiCalendarFill /> },
   ];
 
   return (
