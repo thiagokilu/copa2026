@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 // Usando Phosphor Icons para um traço consistente e moderno
-import { PiSoccerBallFill, PiTrophyFill, PiMapPinFill, PiChartPieSliceFill, PiUsersThreeFill, PiCalendarFill } from 'react-icons/pi';
+import { PiSoccerBallFill, PiMapPinFill, PiChartPieSliceFill, PiUsersThreeFill, PiCalendarFill } from 'react-icons/pi';
 
 const BottomNav = () => {
   const location = useLocation();
