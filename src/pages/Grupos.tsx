@@ -49,21 +49,24 @@ const Grupos = () => {
     <div className="min-h-screen bg-[#020617] text-white font-sans pb-10">
       {/* Seletor de Grupos Estilo Tab Bar */}
       <div className="sticky top-0 z-30 bg-[#020617]/80 backdrop-blur-xl border-b border-white/5 shadow-2xl">
-        <div className="max-w-6xl mx-auto px-4 overflow-x-auto no-scrollbar py-4">
-          <div className="flex gap-2 min-w-max">
+        <div className="max-w-6xl mx-auto px-4 py-4">
+          <div className="flex flex-wrap gap-2">
             {Object.keys(groups).map((g) => {
               const active = selectedGroup === g;
+              const color = (groups as Record<string, { color: string; teams: string[] }>)[g]?.color || "#fff";
               return (
                 <button
                   key={g}
                   onClick={() => setSelectedGroup(g)}
-                  className={`px-5 py-2 rounded-xl text-[11px] font-black uppercase tracking-widest transition-all duration-300 border ${
-                    active 
-                      ? "bg-white text-black border-white shadow-[0_0_20px_rgba(255,255,255,0.2)]" 
-                      : "text-slate-500 border-white/5 hover:border-white/20 hover:text-white"
-                  }`}
+                  className="px-3 sm:px-4 py-1.5 rounded-full text-xs transition-all duration-150 cursor-pointer"
+                  style={{
+                    border: `1px solid ${active ? color : "rgba(255,255,255,0.12)"}`,
+                    background: active ? color + "22" : "transparent",
+                    color: active ? color : "rgba(255,255,255,0.45)",
+                    fontWeight: active ? 700 : 400,
+                  }}
                 >
-                  {g}
+                  Grupo {g}
                 </button>
               );
             })}
