@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { stadiums, matches } from '../../matches.json';
+import { stadiums, matches, type Stadium } from '../types/data';
 import { PiMapPinFill, PiUsersThreeFill, PiSoccerBallFill, PiMagnifyingGlassBold } from 'react-icons/pi';
 import StadiumMatchesModal from '../components/StadiumMatchesModal';
 
@@ -7,9 +7,9 @@ const Estadios = () => {
   const [search, setSearch] = useState('');
   const [selectedStadium, setSelectedStadium] = useState<string | null>(null);
 
-  const filteredStadiums = useMemo(() => {
+  const filteredStadiums = useMemo<[string, Stadium][]>(() => {
     const q = search.toLowerCase().trim();
-    const entries = Object.entries(stadiums) as [string, { city: string; country: string; capacity: number; images?: string[] }][];
+    const entries = Object.entries(stadiums) as [string, Stadium][];
     if (!q) return entries;
     
     return entries.filter(([name, info]) => 
@@ -67,7 +67,7 @@ const Estadios = () => {
                 {/* Imagem do Estádio com Overlay */}
                 <div className="relative w-full md:w-72 h-48 md:h-auto overflow-hidden shrink-0">
                   <img 
-                    src={stadiums[name]?.images?.[0] || `https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=800&auto=format&fit=crop`}
+                    src={info.images?.[0] || `https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=800&auto=format&fit=crop`}
                     alt={name}
                     className="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
                   />

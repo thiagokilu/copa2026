@@ -1,22 +1,23 @@
 import { useState, useMemo } from 'react';
-import { groups, matches } from '../../matches.json';
+import { groups, matches, type Group, type Match } from '../types/data';
 import Flag from '../components/Flag';
 import ConfBadge from '../components/ConfBadge';
 import { PiInfoFill, PiTrophyBold, PiChartLineUpBold } from 'react-icons/pi';
 
 const Grupos = () => {
   const [selectedGroup, setSelectedGroup] = useState("A");
+  const groupsData = groups;
 
-  const groupTeams = useMemo(() => {
-    const groupsData = groups as Record<string, { color: string; teams: string[] }>;
-    return groupsData[selectedGroup]?.teams || [];
-  }, [selectedGroup]);
+  const groupTeams = useMemo<string[]>(() => {
+    const selectedGroupData: Group | undefined = groupsData[selectedGroup];
+    return selectedGroupData?.teams ?? [];
+  }, [groupsData, selectedGroup]);
 
   const groupColor = groupsData[selectedGroup]?.color || "#888";
 
   // Lógica de cálculo (mantive sua lógica que já está correta, mas com nomes mais limpos)
   const getTeamStats = (teamName: string) => {
-    const teamMatches = matches.filter(m => 
+    const teamMatches: Match[] = matches.filter(m => 
       (m.home === teamName || m.away === teamName) && m.group === selectedGroup
     );
     
@@ -52,7 +53,6 @@ const Grupos = () => {
           <div className="flex gap-2 min-w-max">
             {Object.keys(groups).map((g) => {
               const active = selectedGroup === g;
-              const color = groups[g]?.color || "#fff";
               return (
                 <button
                   key={g}

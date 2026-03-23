@@ -1,19 +1,7 @@
-import React, { useMemo } from 'react';
-import { matches } from '../../matches.json';
+import { useMemo } from 'react';
+import { matches, type Match } from '../types/data';
 import Flag from './Flag';
 import { PiXBold } from 'react-icons/pi';
-
-interface Match {
-  id: number;
-  date: string;
-  time_brt: string;
-  group: string;
-  home: string;
-  away: string;
-  stadium: string;
-  score: { home: number; away: number } | null;
-  status: string;
-}
 
 interface StadiumMatchesModalProps {
   stadiumName: string;
@@ -21,8 +9,8 @@ interface StadiumMatchesModalProps {
 }
 
 export default function StadiumMatchesModal({ stadiumName, onClose }: StadiumMatchesModalProps) {
-  const stadiumMatches = useMemo(() => {
-    return (matches as Match[]).filter(match => match.stadium === stadiumName);
+  const stadiumMatches = useMemo<Match[]>(() => {
+    return matches.filter((match) => match.stadium === stadiumName);
   }, [stadiumName]);
 
   return (

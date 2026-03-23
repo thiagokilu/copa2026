@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 import Flag from '../components/Flag';
 import ConfBadge from '../components/ConfBadge';
-import { teams } from '../types/data';
+import { teams, type Team } from '../types/data';
 
 const Selecoes = () => {
   const [search, setSearch] = useState('');
@@ -17,8 +17,8 @@ const Selecoes = () => {
     return ["TODOS", ...Array.from(confs).sort()];
   }, []);
 
-  const filteredTeams = useMemo(() => {
-    let teamsList = Object.entries(teams);
+  const filteredTeams = useMemo<[string, Team][]>(() => {
+    let teamsList = Object.entries(teams) as [string, Team][];
     
     // Filtrar por confederação
     if (selectedConfederation !== "TODOS") {
