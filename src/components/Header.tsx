@@ -1,7 +1,8 @@
 import { Link, useLocation } from 'react-router-dom';
 import { competition } from '../types/data';
 // Usando Phosphor Icons para um traço consistente e moderno
-import { PiSoccerBallFill, PiTrophyFill, PiMapPinFill, PiChartPieSliceFill, PiUsersThreeFill, PiCalendarFill } from 'react-icons/pi';
+import { PiSoccerBallFill, PiMapPinFill, PiChartPieSliceFill, PiUsersThreeFill, PiCalendarFill } from 'react-icons/pi';
+import { RiDashboardHorizontalFill } from 'react-icons/ri';
 
 interface HeaderProps {
   totalStadiums: number;
@@ -12,10 +13,11 @@ const Header = ({ totalStadiums }: HeaderProps) => {
   
   const navItems = [
     { path: "/", label: "Jogos", icon: <PiSoccerBallFill /> },
-    { path: "/estadios", label: "Estádios", icon: <PiMapPinFill /> },
     { path: "/grupos", label: "Grupos", icon: <PiChartPieSliceFill /> },
+    { path: "/estadios", label: "Estádios", icon: <PiMapPinFill /> },
     { path: "/selecoes", label: "Seleções", icon: <PiUsersThreeFill /> },
     { path: "/calendario", label: "Calendário", icon: <PiCalendarFill /> },
+    { path: "/dashboard", label: "Dashboard", icon: <RiDashboardHorizontalFill /> },
   ];
 
   return (
@@ -25,16 +27,9 @@ const Header = ({ totalStadiums }: HeaderProps) => {
 
       <div className="max-w-7xl mx-auto px-4 pt-8 pb-6 sm:pt-12 sm:pb-8">
         <div className="flex flex-col items-center">
-          
-          {/* Badge de Temporada */}
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-yellow-500/10 border border-yellow-500/20 mb-4 transition-transform hover:scale-105">
-            <PiTrophyFill className="text-yellow-500 text-sm" />
-            <span className="text-yellow-500 text-xs font-bold uppercase tracking-wider">Copa do Mundo 2026</span>
-          </div>
-
           {/* Título Principal */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-center bg-gradient-to-r from-white via-yellow-100 to-white bg-clip-text text-transparent mb-2 transition-all duration-700">
-            FIFA World Cup
+            Copa do Mundo 2026
           </h1>
 
           {/* Subtítulo Dinâmico */}

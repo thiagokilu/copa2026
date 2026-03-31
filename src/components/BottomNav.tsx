@@ -1,16 +1,18 @@
 import { Link, useLocation } from 'react-router-dom';
 // Usando Phosphor Icons para um traço consistente e moderno
 import { PiSoccerBallFill, PiMapPinFill, PiChartPieSliceFill, PiUsersThreeFill, PiCalendarFill } from 'react-icons/pi';
+import { RiDashboardHorizontalFill } from 'react-icons/ri';
 
 const BottomNav = () => {
   const location = useLocation();
   
   const navItems = [
     { path: "/", label: "Jogos", icon: <PiSoccerBallFill /> },
-    { path: "/estadios", label: "Estádios", icon: <PiMapPinFill /> },
     { path: "/grupos", label: "Grupos", icon: <PiChartPieSliceFill /> },
+    { path: "/estadios", label: "Estádios", icon: <PiMapPinFill /> },
     { path: "/selecoes", label: "Seleções", icon: <PiUsersThreeFill /> },
     { path: "/calendario", label: "Calendário", icon: <PiCalendarFill /> },
+    { path: "/dashboard", label: "Dashboard", icon: <RiDashboardHorizontalFill /> },
   ];
 
   return (

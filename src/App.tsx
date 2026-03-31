@@ -11,6 +11,7 @@ import Estadios from "./pages/Estadios";
 import Grupos from "./pages/Grupos";
 import Selecoes from "./pages/Selecoes";
 import { matches, stadiums, type Match } from "./types/data";
+import Dashboard from "./pages/Dashboard";
 
 // ── App ───────────────────────────────────────────────────────────────────────
 
@@ -88,6 +89,7 @@ export default function App() {
           <Route path="/grupos" element={<Grupos />} />
           <Route path="/selecoes" element={<Selecoes />} />
           <Route path="/calendario" element={<FullCalendar />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
 
         {/* ── Footer ── */}

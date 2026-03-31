@@ -43,15 +43,59 @@ export default function FullCalendarPage() {
         <h1 className="text-3xl font-bold text-white mb-6">
           Calendário de Jogos - Copa 2026
         </h1>
-        <div className="bg-white rounded-lg p-4">
+        <div className="bg-[#0f172a] rounded-lg p-4">
           <style>{`
             .fc-toolbar-title {
               font-size: 1.2em !important;
               font-weight: bold !important;
-              color: #374151 !important;
+              color: white !important;
             }
             .fc-header-toolbar {
               margin-bottom: 1em !important;
+            }
+            .fc-button-primary {
+              background-color: #1e293b !important;
+              border-color: #334155 !important;
+              color: white !important;
+            }
+            .fc-button-primary:hover {
+              background-color: #334155 !important;
+              border-color: #475569 !important;
+            }
+            .fc-button-primary:active {
+              background-color: #475569 !important;
+              border-color: #64748b !important;
+            }
+            .fc-button-primary:not(:disabled):active, .fc-button-primary:not(:disabled).fc-button-active {
+              background-color: #3b82f6 !important;
+              border-color: #2563eb !important;
+            }
+            .fc-daygrid-day-number {
+              color: white !important;
+            }
+            .fc-col-header-cell {
+              background-color: #1e293b !important;
+              color: white !important;
+            }
+            .fc-daygrid-day {
+              background-color: #0f172a !important;
+              border-color: #1e293b !important;
+            }
+            .fc-daygrid-day.fc-day-today {
+              background-color: #1e293b !important;
+            }
+            .fc-daygrid-day:hover {
+              background-color: #1e293b !important;
+            }
+            .fc-event-title {
+              color: white !important;
+              font-weight: bold !important;
+            }
+            .fc-event-time {
+              color: rgba(255, 255, 255, 0.8) !important;
+            }
+            .fc-daygrid-event {
+              border: none !important;
             }
           `}</style>
           <FullCalendar
@@ -118,7 +162,7 @@ export default function FullCalendarPage() {
               info.el.style.cursor = 'pointer'
             }}
             noEventsContent={() => (
-              <div className="text-center py-8 text-gray-500">
+              <div className="text-center py-8 text-gray-400">
                 Nenhum jogo encontrado neste período.
               </div>
             )}
