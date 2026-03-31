@@ -160,12 +160,6 @@ export default function Dashboard() {
                   <div className="text-red-500 text-4xl mb-2">
                     ▶
                   </div>
-                  <div className="text-white text-sm">
-                    Transmissão ao vivo
-                  </div>
-                  <div className="text-gray-400 text-xs mt-1">
-                    Copa do Mundo 2026
-                  </div>
                 </div>
               </div>
             </div>
