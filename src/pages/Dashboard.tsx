@@ -224,7 +224,54 @@ export default function Dashboard() {
           </div>
 
           {/* Coluna Direita - Jogos Ao Vivo e Próximos Jogos */}
-          <div className="space-y-4 xl:col-span-4">
+          <div className="space-y-4">
+            {/* Grupo Atual */}
+            <div className="bg-[#0f172a] rounded-xl p-4 border border-white/10">
+              <h2 className="text-lg font-bold text-white mb-3 flex items-center gap-2">
+                <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
+                Grupo Atual
+              </h2>
+              <div className="space-y-2">
+                {[
+                  { letter: 'A', teams: 'México, África do Sul, Coreia do Sul, República Tcheca' },
+                  { letter: 'B', teams: 'Canadá, Bósnia, Catar, Suíça' },
+                  { letter: 'C', teams: 'Brasil, Marrocos, Haiti, Escócia' },
+                  { letter: 'D', teams: 'Estados Unidos, Paraguai, Austrália, Turquia' },
+                  { letter: 'E', teams: 'Alemanha, Curaçao, Costa do Marfim, Equador' },
+                  { letter: 'F', teams: 'Holanda, Japão, Suécia, Tunísia' },
+                  { letter: 'G', teams: 'Bélgica, Egito, Irã, Nova Zelândia' },
+                  { letter: 'H', teams: 'Espanha, Cabo Verde, Arábia Saudita, Uruguai' },
+                  { letter: 'I', teams: 'França, Senegal, Iraque, Noruega' },
+                  { letter: 'J', teams: 'Argentina, Argélia, Áustria, Jordânia' },
+                  { letter: 'K', teams: 'Portugal, RD Congo, Uzbequistão, Colômbia' },
+                  { letter: 'L', teams: 'Inglaterra, Croácia, Gana, Panamá' }
+                ].map((group) => {
+                  // Verificar se há jogos em andamento neste grupo
+                  const hasLiveGames = matches.some(match => 
+                    match.group === group.letter && match.status === 'IN_PLAY'
+                  );
+                  
+                  return (
+                    <div 
+                      key={group.letter}
+                      className={`bg-white/5 rounded-lg p-3 text-center hover:bg-white/10 transition-colors cursor-pointer
+                        ${hasLiveGames ? 'ring-2 ring-red-500 ring-opacity-50' : ''}`}
+                    >
+                      <div className={`text-sm font-bold ${hasLiveGames ? 'text-red-500' : 'text-yellow-500'}`}>
+                        Grupo {group.letter}
+                        {hasLiveGames && (
+                          <span className="ml-1 text-xs">🔴</span>
+                        )}
+                      </div>
+                      <div className="text-xs text-gray-400 leading-tight mt-1">
+                        {group.teams.split(', ')[0]}...
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
             {/* Jogos Ao Vivo */}
             {liveMatches.length > 0 && (
               <div className="bg-[#0f172a] rounded-xl p-4 border border-white/10">
@@ -245,7 +292,7 @@ export default function Dashboard() {
               <h2 className="text-lg font-bold text-white mb-3">
                 Próximos Jogos
               </h2>
-              <div className="space-y-3 max-h-[720px] overflow-y-auto pr-1">
+              <div className="space-y-3">
                 {upcomingMatches.map((match) => (
                   <GameCard key={match.id} match={match} />
                 ))}
