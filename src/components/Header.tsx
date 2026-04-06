@@ -2,7 +2,6 @@ import { Link, useLocation } from 'react-router-dom';
 import { competition } from '../types/data';
 // Usando Phosphor Icons para um traço consistente e moderno
 import { PiSoccerBallFill, PiMapPinFill, PiChartPieSliceFill, PiUsersThreeFill, PiCalendarFill } from 'react-icons/pi';
-import { RiDashboardHorizontalFill } from 'react-icons/ri';
 
 interface HeaderProps {
   totalStadiums: number;
@@ -17,15 +16,14 @@ const Header = ({ totalStadiums }: HeaderProps) => {
     { path: "/estadios", label: "Estádios", icon: <PiMapPinFill /> },
     { path: "/selecoes", label: "Seleções", icon: <PiUsersThreeFill /> },
     { path: "/calendario", label: "Calendário", icon: <PiCalendarFill /> },
-    { path: "/dashboard", label: "Dashboard", icon: <RiDashboardHorizontalFill /> },
   ];
 
   return (
-    <header className="relative bg-[#020617] border-b border-white/5 overflow-hidden">
+    <header className="relative bg-[#020617] overflow-hidden">
       {/* Efeito de brilho de fundo (Glow) */}
       <div className="absolute top-[-50px] left-1/2 -translate-x-1/2 w-[300px] h-[100px] bg-yellow-500/20 blur-[80px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 pt-8 pb-6 sm:pt-12 sm:pb-8">
+      <div className="max-w-7xl mx-auto pt-8 pb-6 sm:pt-12 sm:pb-8">
         <div className="flex flex-col items-center">
           {/* Título Principal */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-center bg-gradient-to-r from-white via-yellow-100 to-white bg-clip-text text-transparent mb-2 transition-all duration-700">

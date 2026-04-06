@@ -11,15 +11,14 @@
     "final_venue": "MetLife Stadium",
     "final_city": "East Rutherford, NJ — EUA"
   },
-
   "groups": {
     "A": {
       "color": "#E63946",
-      "teams": ["México", "África do Sul", "Coreia do Sul", "Europa D"]
+      "teams": ["México", "África do Sul", "Coreia do Sul", "Tchéquia"]
     },
     "B": {
       "color": "#457B9D",
-      "teams": ["Canadá", "Catar", "Suíça", "Europa A"]
+      "teams": ["Canadá", "Bósnia", "Catar", "Suíça"]
     },
     "C": {
       "color": "#2D6A4F",
@@ -27,7 +26,7 @@
     },
     "D": {
       "color": "#E9C46A",
-      "teams": ["EUA", "Paraguai", "Austrália", "Europa C"]
+      "teams": ["Estados Unidos", "Paraguai", "Austrália", "Turquia"]
     },
     "E": {
       "color": "#F4A261",
@@ -35,7 +34,7 @@
     },
     "F": {
       "color": "#9B5DE5",
-      "teams": ["Holanda", "Japão", "Europa B", "Tunísia"]
+      "teams": ["Holanda", "Japão", "Suécia", "Tunísia"]
     },
     "G": {
       "color": "#00B4D8",
@@ -47,73 +46,215 @@
     },
     "I": {
       "color": "#06D6A0",
-      "teams": ["França", "Senegal", "Noruega", "Intercontinental 2"]
+      "teams": ["França", "Senegal", "Iraque", "Noruega"]
     },
     "J": {
-      "color": "#FF6B6B",
+      "color": "#FFB700",
       "teams": ["Argentina", "Argélia", "Áustria", "Jordânia"]
     },
     "K": {
-      "color": "#4CC9F0",
-      "teams": ["Portugal", "Colômbia", "Uzbequistão", "Intercontinental 1"]
+      "color": "#FF006E",
+      "teams": ["Portugal", "RD Congo", "Uzbequistão", "Colômbia"]
     },
     "L": {
-      "color": "#F72585",
+      "color": "#8338EC",
       "teams": ["Inglaterra", "Croácia", "Gana", "Panamá"]
     }
   },
-
   "teams": {
-    "México": { "flag": "mx", "confederation": "CONCACAF" },
-    "África do Sul": { "flag": "za", "confederation": "CAF" },
-    "Coreia do Sul": { "flag": "kr", "confederation": "AFC" },
-    "Canadá": { "flag": "ca", "confederation": "CONCACAF" },
-    "Catar": { "flag": "qa", "confederation": "AFC" },
-    "Suíça": { "flag": "ch", "confederation": "UEFA" },
-    "Brasil": { "flag": "br", "confederation": "CONMEBOL" },
-    "Marrocos": { "flag": "ma", "confederation": "CAF" },
-    "Haiti": { "flag": "ht", "confederation": "CONCACAF" },
-    "Escócia": { "flag": "gb-sct", "confederation": "UEFA" },
-    "EUA": { "flag": "us", "confederation": "CONCACAF" },
-    "Paraguai": { "flag": "py", "confederation": "CONMEBOL" },
-    "Austrália": { "flag": "au", "confederation": "AFC" },
-    "Alemanha": { "flag": "de", "confederation": "UEFA" },
-    "Curaçao": { "flag": "cw", "confederation": "CONCACAF" },
-    "Costa do Marfim": { "flag": "ci", "confederation": "CAF" },
-    "Equador": { "flag": "ec", "confederation": "CONMEBOL" },
-    "Holanda": { "flag": "nl", "confederation": "UEFA" },
-    "Japão": { "flag": "jp", "confederation": "AFC" },
-    "Tunísia": { "flag": "tn", "confederation": "CAF" },
-    "Espanha": { "flag": "es", "confederation": "UEFA" },
-    "Cabo Verde": { "flag": "cv", "confederation": "CAF" },
-    "Arábia Saudita": { "flag": "sa", "confederation": "AFC" },
-    "Uruguai": { "flag": "uy", "confederation": "CONMEBOL" },
-    "Bélgica": { "flag": "be", "confederation": "UEFA" },
-    "Egito": { "flag": "eg", "confederation": "CAF" },
-    "Irã": { "flag": "ir", "confederation": "AFC" },
-    "Nova Zelândia": { "flag": "nz", "confederation": "OFC" },
-    "França": { "flag": "fr", "confederation": "UEFA" },
-    "Senegal": { "flag": "sn", "confederation": "CAF" },
-    "Noruega": { "flag": "no", "confederation": "UEFA" },
-    "Argentina": { "flag": "ar", "confederation": "CONMEBOL" },
-    "Argélia": { "flag": "dz", "confederation": "CAF" },
-    "Áustria": { "flag": "at", "confederation": "UEFA" },
-    "Jordânia": { "flag": "jo", "confederation": "AFC" },
-    "Portugal": { "flag": "pt", "confederation": "UEFA" },
-    "Uzbequistão": { "flag": "uz", "confederation": "AFC" },
-    "Colômbia": { "flag": "co", "confederation": "CONMEBOL" },
-    "Inglaterra": { "flag": "gb-eng", "confederation": "UEFA" },
-    "Croácia": { "flag": "hr", "confederation": "UEFA" },
-    "Gana": { "flag": "gh", "confederation": "CAF" },
-    "Panamá": { "flag": "pa", "confederation": "CONCACAF" },
-    "Europa A": { "flag": "eu", "confederation": "UEFA" },
-    "Europa B": { "flag": "eu", "confederation": "UEFA" },
-    "Europa C": { "flag": "eu", "confederation": "UEFA" },
-    "Europa D": { "flag": "eu", "confederation": "UEFA" },
-    "Intercontinental 1": { "flag": "un", "confederation": "TBD" },
-    "Intercontinental 2": { "flag": "un", "confederation": "TBD" }
+    "México": {
+      "flag": "mx",
+      "confederation": "CONCACAF"
+    },
+    "África do Sul": {
+      "flag": "za",
+      "confederation": "CAF"
+    },
+    "Coreia do Sul": {
+      "flag": "kr",
+      "confederation": "AFC"
+    },
+    "Canadá": {
+      "flag": "ca",
+      "confederation": "CONCACAF"
+    },
+    "Catar": {
+      "flag": "qa",
+      "confederation": "AFC"
+    },
+    "Suíça": {
+      "flag": "ch",
+      "confederation": "UEFA"
+    },
+    "Brasil": {
+      "flag": "br",
+      "confederation": "CONMEBOL"
+    },
+    "Marrocos": {
+      "flag": "ma",
+      "confederation": "CAF"
+    },
+    "Haiti": {
+      "flag": "ht",
+      "confederation": "CONCACAF"
+    },
+    "Escócia": {
+      "flag": "gb-sct",
+      "confederation": "UEFA"
+    },
+    "Estados Unidos": {
+      "flag": "us",
+      "confederation": "CONCACAF"
+    },
+    "Paraguai": {
+      "flag": "py",
+      "confederation": "CONMEBOL"
+    },
+    "Austrália": {
+      "flag": "au",
+      "confederation": "AFC"
+    },
+    "Alemanha": {
+      "flag": "de",
+      "confederation": "UEFA"
+    },
+    "Curaçao": {
+      "flag": "cw",
+      "confederation": "CONCACAF"
+    },
+    "Costa do Marfim": {
+      "flag": "ci",
+      "confederation": "CAF"
+    },
+    "Equador": {
+      "flag": "ec",
+      "confederation": "CONMEBOL"
+    },
+    "Holanda": {
+      "flag": "nl",
+      "confederation": "UEFA"
+    },
+    "Japão": {
+      "flag": "jp",
+      "confederation": "AFC"
+    },
+    "Tunísia": {
+      "flag": "tn",
+      "confederation": "CAF"
+    },
+    "Espanha": {
+      "flag": "es",
+      "confederation": "UEFA"
+    },
+    "Cabo Verde": {
+      "flag": "cv",
+      "confederation": "CAF"
+    },
+    "Arábia Saudita": {
+      "flag": "sa",
+      "confederation": "AFC"
+    },
+    "Uruguai": {
+      "flag": "uy",
+      "confederation": "CONMEBOL"
+    },
+    "Bélgica": {
+      "flag": "be",
+      "confederation": "UEFA"
+    },
+    "Egito": {
+      "flag": "eg",
+      "confederation": "CAF"
+    },
+    "Irã": {
+      "flag": "ir",
+      "confederation": "AFC"
+    },
+    "Nova Zelândia": {
+      "flag": "nz",
+      "confederation": "OFC"
+    },
+    "França": {
+      "flag": "fr",
+      "confederation": "UEFA"
+    },
+    "Senegal": {
+      "flag": "sn",
+      "confederation": "CAF"
+    },
+    "Noruega": {
+      "flag": "no",
+      "confederation": "UEFA"
+    },
+    "Argentina": {
+      "flag": "ar",
+      "confederation": "CONMEBOL"
+    },
+    "Argélia": {
+      "flag": "dz",
+      "confederation": "CAF"
+    },
+    "Áustria": {
+      "flag": "at",
+      "confederation": "UEFA"
+    },
+    "Jordânia": {
+      "flag": "jo",
+      "confederation": "AFC"
+    },
+    "Portugal": {
+      "flag": "pt",
+      "confederation": "UEFA"
+    },
+    "Uzbequistão": {
+      "flag": "uz",
+      "confederation": "AFC"
+    },
+    "Colômbia": {
+      "flag": "co",
+      "confederation": "CONMEBOL"
+    },
+    "Inglaterra": {
+      "flag": "gb-eng",
+      "confederation": "UEFA"
+    },
+    "Croácia": {
+      "flag": "hr",
+      "confederation": "UEFA"
+    },
+    "Gana": {
+      "flag": "gh",
+      "confederation": "CAF"
+    },
+    "Panamá": {
+      "flag": "pa",
+      "confederation": "CONCACAF"
+    },
+    "Tchéquia": {
+      "flag": "cz",
+      "confederation": "UEFA"
+    },
+    "Bósnia": {
+      "flag": "ba",
+      "confederation": "UEFA"
+    },
+    "Turquia": {
+      "flag": "tr",
+      "confederation": "UEFA"
+    },
+    "Suécia": {
+      "flag": "se",
+      "confederation": "UEFA"
+    },
+    "Iraque": {
+      "flag": "iq",
+      "confederation": "AFC"
+    },
+    "RD Congo": {
+      "flag": "cd",
+      "confederation": "CAF"
+    }
   },
-
   "stadiums": {
     "Estádio Azteca": {
       "city": "Cidade do México",
@@ -244,7 +385,6 @@
       ]
     }
   },
-
   "matches": [
     {
       "id": 1,
@@ -254,6 +394,7 @@
       "home": "México",
       "away": "África do Sul",
       "stadium": "Estádio Azteca",
+      "broadcast": ["Cazé Tv", "Globo/SporTv", "SBT/Nsports"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -263,8 +404,9 @@
       "time_brt": "23:00",
       "group": "A",
       "home": "Coreia do Sul",
-      "away": "Europa D",
+      "away": "Tchéquia",
       "stadium": "Estadio Akron",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -274,8 +416,9 @@
       "time_brt": "16:00",
       "group": "B",
       "home": "Canadá",
-      "away": "Europa A",
+      "away": "Bósnia",
       "stadium": "BMO Field",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -284,9 +427,10 @@
       "date": "2026-06-12",
       "time_brt": "22:00",
       "group": "D",
-      "home": "EUA",
+      "home": "Estados Unidos",
       "away": "Paraguai",
       "stadium": "SoFi Stadium",
+      "broadcast": ["Cazé Tv", "Globo/SporTv", "SBT/Nsports"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -298,6 +442,7 @@
       "home": "Catar",
       "away": "Suíça",
       "stadium": "Levi's Stadium",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -309,6 +454,7 @@
       "home": "Brasil",
       "away": "Marrocos",
       "stadium": "MetLife Stadium",
+      "broadcast": ["Cazé Tv", "Globo/SporTv", "SBT/Nsports"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -320,17 +466,19 @@
       "home": "Haiti",
       "away": "Escócia",
       "stadium": "Gillette Stadium",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 8,
-      "date": "2026-06-13",
+      "date": "2026-06-14",
       "time_brt": "01:00",
       "group": "D",
       "home": "Austrália",
-      "away": "Europa C",
+      "away": "Turquia",
       "stadium": "BC Place",
+      "broadcast": ["Cazé Tv", "Globo/SporTv"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -342,6 +490,7 @@
       "home": "Alemanha",
       "away": "Curaçao",
       "stadium": "NRG Stadium",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -353,6 +502,7 @@
       "home": "Holanda",
       "away": "Japão",
       "stadium": "AT&T Stadium",
+      "broadcast": ["Cazé Tv", "Globo/SporTv", "SBT/Nsports"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -364,6 +514,7 @@
       "home": "Costa do Marfim",
       "away": "Equador",
       "stadium": "Lincoln Financial Field",
+      "broadcast": ["Cazé Tv", "Globo/SporTv"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -372,9 +523,10 @@
       "date": "2026-06-14",
       "time_brt": "23:00",
       "group": "F",
-      "home": "Europa B",
+      "home": "Suécia",
       "away": "Tunísia",
       "stadium": "Estadio BBVA",
+      "broadcast": ["Cazé Tv", "Globo/SporTv"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -386,6 +538,7 @@
       "home": "Espanha",
       "away": "Cabo Verde",
       "stadium": "Mercedes-Benz Stadium",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -397,6 +550,7 @@
       "home": "Bélgica",
       "away": "Egito",
       "stadium": "Lumen Field",
+      "broadcast": ["Cazé Tv", "Globo/SporTv"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -408,6 +562,7 @@
       "home": "Arábia Saudita",
       "away": "Uruguai",
       "stadium": "Hard Rock Stadium",
+      "broadcast": ["Cazé Tv", "Globo/SporTv", "SBT/Nsports"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -419,50 +574,55 @@
       "home": "Irã",
       "away": "Nova Zelândia",
       "stadium": "SoFi Stadium",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 17,
       "date": "2026-06-16",
-      "time_brt": "01:00",
-      "group": "J",
-      "home": "Áustria",
-      "away": "Jordânia",
-      "stadium": "Levi's Stadium",
+      "time_brt": "16:00",
+      "group": "I",
+      "home": "França",
+      "away": "Senegal",
+      "stadium": "MetLife Stadium",
+      "broadcast": ["Cazé Tv", "Globo/SporTv", "SBT/Nsports"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 18,
       "date": "2026-06-16",
-      "time_brt": "16:00",
+      "time_brt": "19:00",
       "group": "I",
-      "home": "França",
-      "away": "Senegal",
-      "stadium": "MetLife Stadium",
+      "home": "Iraque",
+      "away": "Noruega",
+      "stadium": "Gillette Stadium",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 19,
       "date": "2026-06-16",
-      "time_brt": "19:00",
-      "group": "I",
-      "home": "Intercontinental 2",
-      "away": "Noruega",
-      "stadium": "Gillette Stadium",
-      "score": null,
-      "status": "SCHEDULED"
-    },
-    {
-      "id": 20,
-      "date": "2026-06-16",
       "time_brt": "22:00",
       "group": "J",
       "home": "Argentina",
       "away": "Argélia",
       "stadium": "Arrowhead Stadium",
+      "broadcast": ["Cazé Tv"],
+      "score": null,
+      "status": "SCHEDULED"
+    },
+    {
+      "id": 20,
+      "date": "2026-06-17",
+      "time_brt": "01:00",
+      "group": "J",
+      "home": "Áustria",
+      "away": "Jordânia",
+      "stadium": "Levi's Stadium",
+      "broadcast": ["Cazé Tv", "Globo/SporTv"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -472,8 +632,9 @@
       "time_brt": "14:00",
       "group": "K",
       "home": "Portugal",
-      "away": "Intercontinental 1",
+      "away": "RD Congo",
       "stadium": "NRG Stadium",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -485,6 +646,7 @@
       "home": "Inglaterra",
       "away": "Croácia",
       "stadium": "AT&T Stadium",
+      "broadcast": ["Cazé Tv", "Globo/SporTv", "SBT/Nsports"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -496,6 +658,7 @@
       "home": "Gana",
       "away": "Panamá",
       "stadium": "BMO Field",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -507,6 +670,7 @@
       "home": "Uzbequistão",
       "away": "Colômbia",
       "stadium": "Estádio Azteca",
+      "broadcast": ["Cazé Tv", "Globo/SporTv"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -515,9 +679,10 @@
       "date": "2026-06-18",
       "time_brt": "13:00",
       "group": "A",
-      "home": "Europa D",
+      "home": "Tchéquia",
       "away": "África do Sul",
       "stadium": "Mercedes-Benz Stadium",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -527,8 +692,9 @@
       "time_brt": "16:00",
       "group": "B",
       "home": "Suíça",
-      "away": "Europa A",
+      "away": "Bósnia",
       "stadium": "SoFi Stadium",
+      "broadcast": ["Cazé Tv", "Globo/SporTv", "SBT/Nsports"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -540,6 +706,7 @@
       "home": "Canadá",
       "away": "Catar",
       "stadium": "BC Place",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -551,50 +718,55 @@
       "home": "México",
       "away": "Coreia do Sul",
       "stadium": "Estadio Akron",
+      "broadcast": ["Cazé Tv", "Globo/SporTv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 29,
       "date": "2026-06-19",
-      "time_brt": "01:00",
+      "time_brt": "16:00",
       "group": "D",
-      "home": "Europa C",
-      "away": "Paraguai",
+      "home": "Estados Unidos",
+      "away": "Austrália",
       "stadium": "Levi's Stadium",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 30,
       "date": "2026-06-19",
-      "time_brt": "16:00",
-      "group": "D",
-      "home": "EUA",
-      "away": "Austrália",
+      "time_brt": "19:00",
+      "group": "C",
+      "home": "Escócia",
+      "away": "Marrocos",
       "stadium": "Lumen Field",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 31,
       "date": "2026-06-19",
-      "time_brt": "19:00",
+      "time_brt": "21:30",
       "group": "C",
-      "home": "Escócia",
-      "away": "Marrocos",
+      "home": "Brasil",
+      "away": "Haiti",
       "stadium": "Gillette Stadium",
+      "broadcast": ["Cazé Tv", "Globo/SporTv", "SBT/Nsports"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 32,
-      "date": "2026-06-19",
-      "time_brt": "21:30",
-      "group": "C",
-      "home": "Brasil",
-      "away": "Haiti",
+      "date": "2026-06-20",
+      "time_brt": "00:00",
+      "group": "D",
+      "home": "Turquia",
+      "away": "Paraguai",
       "stadium": "Lincoln Financial Field",
+      "broadcast": ["Cazé Tv", "Globo/SporTv"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -606,6 +778,7 @@
       "home": "Tunísia",
       "away": "Japão",
       "stadium": "Estadio BBVA",
+      "broadcast": ["Cazé Tv", "Globo/SporTv"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -615,8 +788,9 @@
       "time_brt": "14:00",
       "group": "F",
       "home": "Holanda",
-      "away": "Europa B",
+      "away": "Suécia",
       "stadium": "NRG Stadium",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -628,6 +802,7 @@
       "home": "Alemanha",
       "away": "Costa do Marfim",
       "stadium": "BMO Field",
+      "broadcast": ["Cazé Tv", "Globo/SporTv", "SBT/Nsports"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -639,6 +814,7 @@
       "home": "Equador",
       "away": "Curaçao",
       "stadium": "Arrowhead Stadium",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -650,6 +826,7 @@
       "home": "Espanha",
       "away": "Arábia Saudita",
       "stadium": "Mercedes-Benz Stadium",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -661,6 +838,7 @@
       "home": "Bélgica",
       "away": "Irã",
       "stadium": "SoFi Stadium",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -672,6 +850,7 @@
       "home": "Uruguai",
       "away": "Cabo Verde",
       "stadium": "Hard Rock Stadium",
+      "broadcast": ["Cazé Tv", "Globo/SporTv", "SBT/Nsports"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -683,6 +862,7 @@
       "home": "Nova Zelândia",
       "away": "Egito",
       "stadium": "BC Place",
+      "broadcast": ["Cazé Tv", "Globo/SporTv"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -694,6 +874,7 @@
       "home": "Argentina",
       "away": "Áustria",
       "stadium": "AT&T Stadium",
+      "broadcast": ["Cazé Tv", "Globo/SporTv", "SBT/Nsports"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -703,8 +884,9 @@
       "time_brt": "18:00",
       "group": "I",
       "home": "França",
-      "away": "Intercontinental 2",
+      "away": "Iraque",
       "stadium": "Lincoln Financial Field",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
@@ -716,325 +898,355 @@
       "home": "Noruega",
       "away": "Senegal",
       "stadium": "MetLife Stadium",
+      "broadcast": ["Cazé Tv", "Globo/SporTv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 44,
       "date": "2026-06-23",
-      "time_brt": "14:00",
+      "time_brt": "00:00",
       "group": "J",
       "home": "Jordânia",
       "away": "Argélia",
       "stadium": "Levi's Stadium",
+      "broadcast": ["Cazé Tv", "Globo/SporTv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 45,
       "date": "2026-06-23",
-      "time_brt": "17:00",
+      "time_brt": "14:00",
       "group": "K",
-      "home": "Intercontinental 1",
-      "away": "Uzbequistão",
+      "home": "Colômbia",
+      "away": "RD Congo",
       "stadium": "NRG Stadium",
+      "broadcast": ["Cazé Tv", "Globo/SporTv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 46,
       "date": "2026-06-23",
-      "time_brt": "20:00",
-      "group": "K",
-      "home": "Colômbia",
-      "away": "Portugal",
+      "time_brt": "17:00",
+      "group": "L",
+      "home": "Inglaterra",
+      "away": "Gana",
       "stadium": "Estádio Azteca",
+      "broadcast": ["Cazé Tv", "Globo/SporTv", "SBT/Nsports"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 47,
       "date": "2026-06-23",
-      "time_brt": "23:00",
+      "time_brt": "20:00",
       "group": "L",
-      "home": "Croácia",
-      "away": "Gana",
+      "home": "Panamá",
+      "away": "Croácia",
       "stadium": "AT&T Stadium",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 48,
-      "date": "2026-06-24",
-      "time_brt": "14:00",
-      "group": "L",
-      "home": "Panamá",
-      "away": "Inglaterra",
+      "date": "2026-06-23",
+      "time_brt": "23:00",
+      "group": "K",
+      "home": "Portugal",
+      "away": "Uzbequistão",
       "stadium": "BMO Field",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 49,
       "date": "2026-06-24",
-      "time_brt": "17:00",
-      "group": "A",
-      "home": "África do Sul",
-      "away": "Coreia do Sul",
+      "time_brt": "16:00",
+      "group": "B",
+      "home": "Suíça",
+      "away": "Canadá",
       "stadium": "Estadio Akron",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 50,
       "date": "2026-06-24",
-      "time_brt": "17:00",
-      "group": "A",
-      "home": "México",
-      "away": "Europa D",
+      "time_brt": "16:00",
+      "group": "B",
+      "home": "Bósnia",
+      "away": "Catar",
       "stadium": "Estádio Azteca",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 51,
       "date": "2026-06-24",
-      "time_brt": "21:00",
-      "group": "B",
-      "home": "Europa A",
-      "away": "Catar",
+      "time_brt": "19:00",
+      "group": "C",
+      "home": "Escócia",
+      "away": "Brasil",
       "stadium": "SoFi Stadium",
+      "broadcast": ["Cazé Tv", "Globo/SporTv", "SBT/Nsports"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 52,
       "date": "2026-06-24",
-      "time_brt": "21:00",
-      "group": "B",
-      "home": "Suíça",
-      "away": "Canadá",
+      "time_brt": "19:00",
+      "group": "C",
+      "home": "Marrocos",
+      "away": "Haiti",
       "stadium": "BC Place",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 53,
-      "date": "2026-06-25",
-      "time_brt": "17:00",
-      "group": "C",
-      "home": "Marrocos",
-      "away": "Haiti",
+      "date": "2026-06-24",
+      "time_brt": "22:00",
+      "group": "A",
+      "home": "Tchéquia",
+      "away": "México",
       "stadium": "Gillette Stadium",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 54,
-      "date": "2026-06-25",
-      "time_brt": "17:00",
-      "group": "C",
-      "home": "Escócia",
-      "away": "Brasil",
+      "date": "2026-06-24",
+      "time_brt": "22:00",
+      "group": "A",
+      "home": "África do Sul",
+      "away": "Coreia do Sul",
       "stadium": "MetLife Stadium",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 55,
       "date": "2026-06-25",
-      "time_brt": "21:00",
-      "group": "D",
-      "home": "Paraguai",
-      "away": "EUA",
+      "time_brt": "17:00",
+      "group": "E",
+      "home": "Curaçao",
+      "away": "Costa do Marfim",
       "stadium": "Lumen Field",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 56,
       "date": "2026-06-25",
-      "time_brt": "21:00",
-      "group": "D",
-      "home": "Europa C",
-      "away": "Austrália",
+      "time_brt": "17:00",
+      "group": "E",
+      "home": "Equador",
+      "away": "Alemanha",
       "stadium": "Levi's Stadium",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 57,
-      "date": "2026-06-26",
-      "time_brt": "17:00",
-      "group": "E",
-      "home": "Curaçao",
-      "away": "Costa do Marfim",
+      "date": "2026-06-25",
+      "time_brt": "20:00",
+      "group": "F",
+      "home": "Japão",
+      "away": "Suécia",
       "stadium": "Lincoln Financial Field",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 58,
-      "date": "2026-06-26",
-      "time_brt": "17:00",
-      "group": "E",
-      "home": "Equador",
-      "away": "Alemanha",
+      "date": "2026-06-25",
+      "time_brt": "20:00",
+      "group": "F",
+      "home": "Tunísia",
+      "away": "Holanda",
       "stadium": "Arrowhead Stadium",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 59,
-      "date": "2026-06-26",
-      "time_brt": "21:00",
-      "group": "F",
-      "home": "Japão",
-      "away": "Europa B",
+      "date": "2026-06-25",
+      "time_brt": "23:00",
+      "group": "D",
+      "home": "Turquia",
+      "away": "Estados Unidos",
       "stadium": "AT&T Stadium",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 60,
-      "date": "2026-06-26",
-      "time_brt": "21:00",
-      "group": "F",
-      "home": "Tunísia",
-      "away": "Holanda",
+      "date": "2026-06-25",
+      "time_brt": "23:00",
+      "group": "D",
+      "home": "Paraguai",
+      "away": "Austrália",
       "stadium": "Estadio BBVA",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 61,
-      "date": "2026-06-27",
-      "time_brt": "17:00",
-      "group": "G",
-      "home": "Egito",
-      "away": "Irã",
+      "date": "2026-06-26",
+      "time_brt": "16:00",
+      "group": "I",
+      "home": "Noruega",
+      "away": "França",
       "stadium": "BC Place",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 62,
-      "date": "2026-06-27",
-      "time_brt": "17:00",
-      "group": "G",
-      "home": "Nova Zelândia",
-      "away": "Bélgica",
+      "date": "2026-06-26",
+      "time_brt": "16:00",
+      "group": "I",
+      "home": "Senegal",
+      "away": "Iraque",
       "stadium": "SoFi Stadium",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 63,
-      "date": "2026-06-27",
+      "date": "2026-06-26",
       "time_brt": "21:00",
       "group": "H",
       "home": "Cabo Verde",
       "away": "Arábia Saudita",
       "stadium": "Hard Rock Stadium",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 64,
-      "date": "2026-06-27",
+      "date": "2026-06-26",
       "time_brt": "21:00",
       "group": "H",
       "home": "Uruguai",
       "away": "Espanha",
       "stadium": "Mercedes-Benz Stadium",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 65,
-      "date": "2026-06-28",
-      "time_brt": "17:00",
-      "group": "I",
-      "home": "Senegal",
-      "away": "Intercontinental 2",
+      "date": "2026-06-27",
+      "time_brt": "00:00",
+      "group": "G",
+      "home": "Egito",
+      "away": "Irã",
       "stadium": "Gillette Stadium",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 66,
-      "date": "2026-06-28",
-      "time_brt": "17:00",
-      "group": "I",
-      "home": "Noruega",
-      "away": "França",
+      "date": "2026-06-27",
+      "time_brt": "00:00",
+      "group": "G",
+      "home": "Nova Zelândia",
+      "away": "Bélgica",
       "stadium": "MetLife Stadium",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 67,
-      "date": "2026-06-28",
-      "time_brt": "21:00",
-      "group": "J",
-      "home": "Argélia",
-      "away": "Áustria",
+      "date": "2026-06-27",
+      "time_brt": "18:00",
+      "group": "L",
+      "home": "Panamá",
+      "away": "Inglaterra",
       "stadium": "Levi's Stadium",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 68,
-      "date": "2026-06-28",
-      "time_brt": "21:00",
-      "group": "J",
-      "home": "Jordânia",
-      "away": "Argentina",
+      "date": "2026-06-27",
+      "time_brt": "18:00",
+      "group": "L",
+      "home": "Croácia",
+      "away": "Gana",
       "stadium": "AT&T Stadium",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 69,
-      "date": "2026-06-29",
-      "time_brt": "17:00",
+      "date": "2026-06-27",
+      "time_brt": "20:30",
       "group": "K",
-      "home": "Uzbequistão",
+      "home": "Colômbia",
       "away": "Portugal",
       "stadium": "NRG Stadium",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 70,
-      "date": "2026-06-29",
-      "time_brt": "17:00",
+      "date": "2026-06-27",
+      "time_brt": "20:30",
       "group": "K",
-      "home": "Colômbia",
-      "away": "Intercontinental 1",
+      "home": "RD Congo",
+      "away": "Uzbequistão",
       "stadium": "Estádio Azteca",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 71,
-      "date": "2026-06-29",
-      "time_brt": "21:00",
-      "group": "L",
-      "home": "Gana",
-      "away": "Inglaterra",
+      "date": "2026-06-27",
+      "time_brt": "23:00",
+      "group": "J",
+      "home": "Argélia",
+      "away": "Áustria",
       "stadium": "BMO Field",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     },
     {
       "id": 72,
-      "date": "2026-06-29",
-      "time_brt": "21:00",
-      "group": "L",
-      "home": "Panamá",
-      "away": "Croácia",
+      "date": "2026-06-27",
+      "time_brt": "23:00",
+      "group": "J",
+      "home": "Jordânia",
+      "away": "Argentina",
       "stadium": "AT&T Stadium",
+      "broadcast": ["Cazé Tv"],
       "score": null,
       "status": "SCHEDULED"
     }

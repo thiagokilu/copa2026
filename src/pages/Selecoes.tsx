@@ -90,7 +90,7 @@ const Selecoes = () => {
             SELEÇÕES
           </h1>
           <p className="m-0 text-xs sm:text-sm text-white/40 tracking-wide uppercase">
-            {Object.keys(teams).length} equipes · Copa do Mundo FIFA 2026
+            {Object.keys(teams).length} equipes · Copa do Mundo 2026
           </p>
         </div>
 

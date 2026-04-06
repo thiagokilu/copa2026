@@ -43,6 +43,7 @@ export interface Match {
   home: string;
   away: string;
   stadium: string;
+  broadcast?: string[];
   score: MatchScore | null;
   status: string;
 }

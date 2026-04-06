@@ -9,9 +9,9 @@ interface FiltersProps {
 
 const Filters = ({ selectedGroup, setSelectedGroup, search, setSearch }: FiltersProps) => {
   return (
-    <div className="sticky top-0 z-10 bg-[#0a0e1a]/95 backdrop-blur border-b border-white/5">
+    <div className="sticky top-0 z-10 bg-[#0a0e1a]/95 backdrop-blur">
       {/* Busca */}
-      <div className="px-4 sm:px-6 pt-3 pb-2">
+      <div className="pt-3 pb-2">
         <input
           type="text"
           placeholder="Buscar seleção ou estádio…"
@@ -21,7 +21,7 @@ const Filters = ({ selectedGroup, setSelectedGroup, search, setSearch }: Filters
         />
       </div>
       {/* Grupos */}
-      <div className="px-4 sm:px-6 pb-3">
+      <div className="pb-3">
         <div className="flex flex-wrap gap-2 sm:gap-2.5">
           {["TODOS", ...Object.keys(groups)].map((g) => {
             const active = selectedGroup === g;
